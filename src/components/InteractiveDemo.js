@@ -45,7 +45,7 @@ export default function InteractiveDemo() {
       position: 'relative'
     }}>
       <div style={{
-        maxWidth: '1200px',
+        maxWidth: '2400px',
         margin: '0 auto',
         display: 'flex',
         gap: '4rem'

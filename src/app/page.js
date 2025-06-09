@@ -5,6 +5,9 @@ import Hero from '../components/Hero';
 import Features from '../components/Features';
 import InteractiveDemo from '../components/InteractiveDemo';
 import FAQ from '../components/FAQ';
+import PainPoints from '../components/PainPoints';
+import Roadmap from '../components/Roadmap';
+import BetaSignup from '../components/BetaSignup';
 
 export default function Home() {
   const mainRef = useRef(null);
@@ -47,13 +50,14 @@ export default function Home() {
     <main ref={mainRef}>
       <Navigation />
       <Hero />
+      <PainPoints />
       <Features />
       <div ref={interactiveDemoRef}>
         <InteractiveDemo />
       </div>
+      <Roadmap />
+      <BetaSignup />
       <FAQ />
-      <Features />
-      <Features />
     </main>
   );
 }
