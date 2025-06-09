@@ -8,6 +8,7 @@ import FAQ from '../components/FAQ';
 import PainPoints from '../components/PainPoints';
 import Roadmap from '../components/Roadmap';
 import BetaSignup from '../components/BetaSignup';
+import Footer from '../components/Footer';
 
 export default function Home() {
   const mainRef = useRef(null);
@@ -58,6 +59,7 @@ export default function Home() {
       <Roadmap />
       <BetaSignup />
       <FAQ />
+      <Footer />
     </main>
   );
 }
