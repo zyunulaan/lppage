@@ -1,0 +1,59 @@
+'use client';
+import { useEffect, useRef } from 'react';
+import Navigation from '../components/Navigation';
+import Hero from '../components/Hero';
+import Features from '../components/Features';
+import InteractiveDemo from '../components/InteractiveDemo';
+import FAQ from '../components/FAQ';
+
+export default function Home() {
+  const mainRef = useRef(null);
+  const interactiveDemoRef = useRef(null);
+
+  useEffect(() => {
+    const main = mainRef.current;
+    const interactiveDemo = interactiveDemoRef.current;
+    if (!main || !interactiveDemo) return;
+
+    const handleWheel = (e) => {
+      const demoRect = interactiveDemo.getBoundingClientRect();
+      const isInDemo = e.clientY >= demoRect.top && e.clientY <= demoRect.bottom;
+      
+      if (isInDemo) {
+        const leftSection = interactiveDemo.querySelector('div > div:first-child');
+        if (!leftSection) return;
+
+        const { scrollTop, scrollHeight, clientHeight } = leftSection;
+        const isAtTop = scrollTop === 0;
+        const isAtBottom = scrollTop + clientHeight >= scrollHeight;
+
+        // If we're at the top and scrolling up, or at the bottom and scrolling down,
+        // allow the main page to scroll
+        if ((isAtTop && e.deltaY < 0) || (isAtBottom && e.deltaY > 0)) {
+          return;
+        }
+
+        // Otherwise, prevent the main page from scrolling
+        e.preventDefault();
+        leftSection.scrollTop += e.deltaY;
+      }
+    };
+
+    main.addEventListener('wheel', handleWheel, { passive: false });
+    return () => main.removeEventListener('wheel', handleWheel);
+  }, []);
+
+  return (
+    <main ref={mainRef}>
+      <Navigation />
+      <Hero />
+      <Features />
+      <div ref={interactiveDemoRef}>
+        <InteractiveDemo />
+      </div>
+      <FAQ />
+      <Features />
+      <Features />
+    </main>
+  );
+}
