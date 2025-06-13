@@ -20,7 +20,7 @@ export default function BetaSignup() {
             color: '#FFFFFF',
             marginBottom: '1rem'
           }}>
-            Join Our Beta Program
+            現在βテスト実施中！
           </h2>
           <p style={{
             fontSize: '1.2rem',
@@ -30,7 +30,7 @@ export default function BetaSignup() {
             lineHeight: '1.6',
             opacity: 0.9
           }}>
-            We're excited to have you on board! Be among the first to experience our AI-powered writing assistant and help shape its future.
+            無料でAIライターくんを試してみてください！
           </p>
           <button
             onClick={() => window.location.href = '/signup'}
@@ -49,7 +49,7 @@ export default function BetaSignup() {
               }
             }}
           >
-            Sign Up for Free Beta Access
+            今すぐ試す
           </button>
         </div>
       </div>
@@ -71,22 +71,24 @@ export default function BetaSignup() {
             color: '#172B4D',
             marginBottom: '1rem'
           }}>
-            Help Us Improve
+            βユーザーの皆様へのお願い
           </h3>
           <p style={{
             fontSize: '1.2rem',
             color: '#505F79',
-            maxWidth: '600px',
+            maxWidth: '1200px',
             margin: '0 auto 2rem',
             lineHeight: '1.6'
           }}>
-            Your feedback is invaluable to us. Share your ideas, requirements, and suggestions through our feedback questionnaire. Together, we can build the perfect writing assistant for your needs.
+            AIライターくんはより使いやすく満足いただけるサービスを作るため、フィードバックを募集しています。
+<br />
+新しい機能に関する要望も大歓迎ですので、ぜひ下記フォームよりお寄せください！
           </p>
           <button
-            onClick={() => window.location.href = 'https://forms.example.com/feedback'}
+            onClick={() => window.location.href = 'https://forms.gle/q8tsXw82Wh6RRhNP6'}
             style={{
               background: '#36B37E',
-              color: '#FFFFFF',
+              background: 'linear-gradient(135deg, #3B82F6, #14B8A6)',
               border: 'none',
               padding: '1rem 2rem',
               fontSize: '1.1rem',
@@ -98,7 +100,7 @@ export default function BetaSignup() {
               }
             }}
           >
-            Share Your Feedback
+            ご要望・フィードバックはこちらから
           </button>
         </div>
       </div>

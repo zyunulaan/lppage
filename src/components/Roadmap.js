@@ -1,20 +1,28 @@
 export default function Roadmap() {
   const roadmapItems = [
     {
-      title: "Enhanced AI Capabilities",
-      description: "Expanding our AI's understanding of context and nuance for more accurate suggestions"
+      title: "文章の中身、設定と追加情報を保存できる",
+      description: "いつでもどこでもAIライターくんで快適な文章編集ができます！"
     },
     {
-      title: "Advanced Analytics Dashboard",
-      description: "Gaining deeper insights into your writing patterns and team performance"
+      title: "組織管理を導入",
+      description: "会社・グループで情報と権限を共有できます！"
     },
     {
-      title: "Extended Integration Network",
-      description: "Connecting with more of your favorite tools for seamless workflow"
+      title: "生成AIを利用して文章の文法・言い回しを改修",
+      description: "自動補完だけではなく、より柔軟な編集機能を搭載します！"
     },
     {
-      title: "Custom AI Training",
-      description: "Personalized AI models trained on your organization's specific writing style"
+      title: "RAG機能で会社・個人DBの検索を搭載",
+      description: "先端技術で、文章生成の精度をさらに向上します！"
+    },
+    {
+      title: "インターフェースを増えます",
+      description: "Chrome等のブラウザーのプラグイン、または入力アプリも期待されます！"
+    },
+    {
+      title: "チャット・メール・ドキュメントDBアプリと連携",
+      description: "数多くのコミュニケーションアプリと連携します！"
     }
   ];
 
@@ -33,24 +41,14 @@ export default function Roadmap() {
           textAlign: 'center',
           marginBottom: '1rem'
         }}>
-          Our Roadmap
+          今後のアップデート予定を共有します！
         </h2>
-        <p style={{
-          fontSize: '1.2rem',
-          color: '#505F79',
-          textAlign: 'center',
-          maxWidth: '600px',
-          margin: '0 auto 3rem',
-          lineHeight: '1.6'
-        }}>
-          Exciting features and improvements coming your way
-        </p>
 
         <div style={{
           display: 'flex',
           justifyContent: 'center',
           position: 'relative',
-          maxWidth: '800px',
+          maxWidth: '1200px',
           margin: '0 auto 4rem'
         }}>
           {/* Vertical Progress Bar */}
@@ -68,7 +66,7 @@ export default function Roadmap() {
           <div style={{
             display: 'flex',
             flexDirection: 'column',
-            gap: '2.5rem',
+            gap: '1.5rem',
             position: 'relative',
             zIndex: 1
           }}>
@@ -144,7 +142,7 @@ export default function Roadmap() {
             borderRadius: '8px',
             boxShadow: '0 2px 4px rgba(0,0,0,0.05)'
           }}>
-            💬
+            🚀
           </div>
           <p style={{
             fontSize: '1.25rem',
@@ -152,7 +150,7 @@ export default function Roadmap() {
             fontWeight: '500',
             margin: 0
           }}>
-            Join thousands of teams who trust us to improve their communication
+            もっと広い場所でAIライターくんを使えるようになります！
           </p>
         </div>
       </div>

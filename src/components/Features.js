@@ -1,18 +1,18 @@
 export default function Features() {
   const features = [
     {
-      title: "Smart Writing Assistant",
-      description: "AI-powered suggestions that help you craft professional messages quickly and effectively.",
+      title: "文章を書きながら自動補完する",
+      description: "迷ったときに、自動補完が出てきます！ショートカットで、好きな生成結果を選べます！",
       icon: "✍️"
     },
     {
-      title: "Error Prevention",
-      description: "Automatically catch and correct grammar, tone, and style issues before sending.",
-      icon: "✅"
+      title: "補完のトーンとスタイルを変更する",
+      description: "設定パネルで、丁寧さ・目的・詳細な情報を追加することは可能！",
+      icon: "🎯"
     },
     {
-      title: "Team Collaboration",
-      description: "Share templates and best practices across your organization for consistent communication.",
+      title: "やり取りを参照して",
+      description: "参照したい文章・コミュニケーション履歴を張り付けて、コンテキストを理解したAIライターくんで気楽に補完しよう！",
       icon: "👥"
     }
   ];
@@ -32,7 +32,7 @@ export default function Features() {
           color: '#172B4D',
           marginBottom: '3rem'
         }}>
-          Why Teams Choose Us
+          AIライターくんの機能を紹介します！
         </h2>
         <div style={{
           display: 'flex',
@@ -105,7 +105,7 @@ export default function Features() {
             borderRadius: '8px',
             boxShadow: '0 2px 4px rgba(0,0,0,0.05)'
           }}>
-            💬
+            ✨
           </div>
           <p style={{
             fontSize: '1.25rem',
@@ -113,7 +113,7 @@ export default function Features() {
             fontWeight: '500',
             margin: 0
           }}>
-            Join thousands of teams who trust us to improve their communication
+            ビジネスシーンに最適な入力支援ツールです！
           </p>
         </div>
       </div>

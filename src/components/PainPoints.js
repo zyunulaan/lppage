@@ -1,26 +1,23 @@
 export default function PainPoints() {
     const painPoints = [
       {
-        name: "Sarah Chen",
-        role: "Content Marketing Manager",
+        name: "AIライターくんを使えば、文章作成の負担を一気に軽減できます！",
         image: "/images/profile1.jpg", // You'll need to add these images
-        painPoint: "Time-consuming content creation",
-        description: "I spend hours crafting the perfect message, only to realize it doesn't align with our brand voice. The back-and-forth revisions are exhausting and delay our content calendar."
+        painPoint: "文章を書く時間に追われない！",
+        description: "- 時間を取られて業務に集中できない...<br />-毎回文章をゼロから考えるのがしんどい...<br />- 適切なトーンで伝えるのに悩んでる..."
       },
       {
-        name: "Michael Rodriguez",
-        role: "Sales Team Lead",
+        name: "AIライターくんなら、敬語レベルも自由に調整！あなたの代わりに“ちょうどいい”文章を生成します。",
         image: "/images/profile2.jpg",
-        painPoint: "Inconsistent communication",
-        description: "Our team's emails and proposals lack consistency. Each rep has their own style, making it hard to maintain our professional image and close deals effectively."
+        painPoint: "相手や場面に応じた表現、悩んでいます！",
+        description: "- この言い回し、少しフランクすぎないかな？<br />- 社内用とお客様向けで文体を切り替えたいけど、面倒くさい<br />- 言葉遣いのせいで、印象が悪くならないか心配"
       },
       {
-        name: "Emma Thompson",
-        role: "HR Director",
+        name: "AIライターくんなら、カスタムプロンプトであなた仕様にカスタマイズ可能！",
         image: "/images/profile3.jpg",
-        painPoint: "Brand voice compliance",
-        description: "Ensuring all company communications follow our brand guidelines is a constant challenge. Manual reviews are time-consuming and often miss subtle tone inconsistencies."
-      }
+        painPoint: "汎用AIでは、あなたらしい表現が出てこないことも…",
+        description: "- 決まったプロンプトだと、いつも同じような文章になる<br />- 自分の言い回しやスタイルを反映させたい<br />- よく使う言葉や構成を覚えてくれるツールがあったらいいのに"
+      },
     ];
   
     return (
@@ -40,17 +37,6 @@ export default function PainPoints() {
           }}>
             ビジネス文章の悩みを解決したい！
           </h2>
-          <p style={{
-            fontSize: '1.2rem',
-            color: '#505F79',
-            textAlign: 'center',
-            maxWidth: '600px',
-            margin: '0 auto 4rem',
-            lineHeight: '1.6'
-          }}>
-            Real problems faced by professionals like you, solved with our AI-powered writing assistant
-          </p>
-  
           <div style={{
             display: 'grid',
             gridTemplateColumns: 'repeat(3, 1fr)',
@@ -90,20 +76,21 @@ export default function PainPoints() {
                     }}
                   />
                 </div>
-                <h3 style={{
-                  fontSize: '1.8rem',
+                <h4 style={{
+                  fontSize: '1.2rem',
                   color: '#172B4D',
                   marginBottom: '0.5rem'
                 }}>
                   {point.painPoint}
-                </h3>
+                </h4>
                 <p style={{
                   color: '#505F79',
                   lineHeight: '1.6',
                   marginBottom: '1.5rem',
-                  fontSize: '1.1rem'
-                }}>
-                  {point.description}
+                  fontSize: '0.9rem'
+                }}
+                dangerouslySetInnerHTML={{ __html: point.description }}
+                >
                 </p>
                 <div style={{
                   borderTop: '1px solid #DFE1E6',
@@ -116,12 +103,6 @@ export default function PainPoints() {
                     marginBottom: '0.25rem'
                   }}>
                     {point.name}
-                  </p>
-                  <p style={{
-                    color: '#6B778C',
-                    fontSize: '0.9rem'
-                  }}>
-                    {point.role}
                   </p>
                 </div>
               </div>
@@ -159,7 +140,7 @@ export default function PainPoints() {
               fontWeight: '500',
               margin: 0
             }}>
-              Join thousands of teams who trust us to improve their communication
+              AIライターくんを使えば解決できます！
             </p>
           </div>
         </div>

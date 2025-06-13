@@ -23,7 +23,9 @@ export default function Navigation() {
           gap: '2rem',
           alignItems: 'center'
         }}>
-          <button style={{
+          <button 
+          onClick={() => window.location.href = 'https://forms.gle/q8tsXw82Wh6RRhNP6'}
+          style={{
             padding: '0.5rem 1rem',
             background: 'linear-gradient(135deg, #3B82F6, #14B8A6)',
             color: 'white',
@@ -31,7 +33,7 @@ export default function Navigation() {
             borderRadius: '3px',
             cursor: 'pointer'
           }}>
-            ご要望があればこちらから
+            ご要望・フィードバックはこちらから
           </button>          
           <button style={{
             padding: '0.5rem 1rem',

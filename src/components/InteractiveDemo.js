@@ -44,6 +44,14 @@ export default function InteractiveDemo() {
       minHeight: '100vh',
       position: 'relative'
     }}>
+    <h2 style={{
+      fontSize: '2.5rem',
+      color: '#172B4D',
+      textAlign: 'center',
+      marginBottom: '1rem'
+    }}>
+      今後のアップデート予定を共有します！
+    </h2>
       <div style={{
         maxWidth: '2400px',
         margin: '0 auto',
