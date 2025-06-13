@@ -33,7 +33,7 @@ export default function Home() {
 
         // If we're at the top and scrolling up, or at the bottom and scrolling down,
         // allow the main page to scroll
-        if ((isAtTop && e.deltaY < 0) || (isAtBottom && e.deltaY > 0)) {
+        if ((isAtTop) || (isAtBottom && e.deltaY > 0)) {
           return;
         }
 

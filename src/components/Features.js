@@ -49,11 +49,6 @@ export default function Features() {
                 background: '#F4F5F7',
                 borderRadius: '8px',
                 transition: 'transform 0.2s, box-shadow 0.2s',
-                cursor: 'pointer',
-                ':hover': {
-                  transform: 'translateY(-5px)',
-                  boxShadow: '0 4px 8px rgba(0,0,0,0.1)'
-                }
               }}
             >
               <div style={{

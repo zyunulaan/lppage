@@ -1,16 +1,16 @@
 export default function FAQ() {
   const faqs = [
     {
-      question: "How does the AI writing assistant work?",
-      answer: "Our AI writing assistant uses advanced natural language processing to analyze your text in real-time. It provides suggestions for grammar, style, tone, and clarity while maintaining your unique voice. The system learns from your preferences and adapts to your writing style over time."
+      question: "AIライターくんは完全無料ですか？",
+      answer: "現在は完全無料ですので、各ユーザーが補完を利用する制限を設けております。新機能の実装と伴い、サブスクリプションでより高い性能を提供することをご期待ください。"
     },
     {
-      question: "Is my content secure and private?",
-      answer: "Yes, we take data security very seriously. All content is encrypted in transit and at rest. We never share your content with third parties, and our enterprise-grade security measures ensure your data remains confidential and protected at all times."
+      question: "個人情報を利用方針は？",
+      answer: "AIライターくんは、個人情報・プライバシーを重視しております。詳細について、こちら<利用規約リンク>でご確認お願いします。"
     },
     {
-      question: "Can I integrate this with my existing tools?",
-      answer: "Absolutely! Our platform offers seamless integration with popular email clients, content management systems, and productivity tools. We provide APIs and plugins for easy integration, and our team can help you set up custom integrations for your specific needs."
+      question: "APIプラットフォーム、もしくはプラグインにも対応していますか？",
+      answer: "こちらの機能は予定がありますので、ぜひお楽しみください。"
     }
   ];
 
@@ -21,6 +21,7 @@ export default function FAQ() {
     }}>
       <div style={{
         maxWidth: '1200px',
+        textAlign: 'center',
         margin: '0 auto'
       }}>
         <h2 style={{
@@ -29,7 +30,7 @@ export default function FAQ() {
           textAlign: 'center',
           marginBottom: '3rem'
         }}>
-          Frequently Asked Questions
+          FAQ
         </h2>
         
         <div style={{
@@ -37,7 +38,8 @@ export default function FAQ() {
           flexDirection: 'column',
           gap: '2rem',
           maxWidth: '800px',
-          margin: '0 auto'
+          margin: '0 auto 2rem',
+          textAlign: 'left',
         }}>
           {faqs.map((faq, index) => (
             <div
@@ -48,10 +50,6 @@ export default function FAQ() {
                 padding: '2rem',
                 boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
                 transition: 'transform 0.2s ease-in-out',
-                cursor: 'pointer',
-                ':hover': {
-                  transform: 'translateY(-2px)'
-                }
               }}
             >
               <h3 style={{
@@ -71,6 +69,25 @@ export default function FAQ() {
             </div>
           ))}
         </div>
+
+        <button
+            onClick={() => window.location.href = 'https://forms.gle/q8tsXw82Wh6RRhNP6'}
+            style={{
+              background: '#36B37E',
+              background: '#0052CC',
+              border: 'none',
+              padding: '1rem 2rem',
+              fontSize: '1.1rem',
+              borderRadius: '8px',
+              cursor: 'pointer',
+              transition: 'background-color 0.2s',
+              ':hover': {
+                background: '#2E9D6E'
+              }
+            }}
+          >
+            お問い合わせはこちら
+          </button>
       </div>
     </section>
   );

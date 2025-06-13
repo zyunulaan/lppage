@@ -1,39 +1,39 @@
 export default function InteractiveDemo() {
   const features = [
     {
-      title: "Real-time Suggestions",
-      subtitle: "Instant feedback as you type",
-      description: "Get immediate suggestions for improving your writing, from grammar corrections to tone adjustments."
+      title: "爆速の自動補完でスムーズな書く体験をもらえる！",
+      subtitle: "Instant completion as you type",
+      description: "AIライターくんが入力停止を検知し、一秒で補完された文章が現れます。※初期化に少し延長する可能性があります。"
     },
     {
-      title: "Smart Templates",
-      subtitle: "Pre-built for common scenarios",
-      description: "Access a library of professional templates for various business scenarios, customizable to your needs."
+      title: "過去のやりとりを踏まえた文章生成！",
+      subtitle: "Text generation based on past communications",
+      description: "過去のメッセージや会話の文脈を理解し、より自然で一貫性のある文章を生成します。"
     },
     {
-      title: "Analytics Dashboard",
-      subtitle: "Track your writing performance",
-      description: "Monitor your team's writing patterns and improvements over time with detailed analytics."
+      title: "補完の長さを自由に設定できる！",
+      subtitle: "Customize completion length to your needs",
+      description: "短い補完から長文まで、用途に応じて自由に長さを調整できます。"
     },
     {
-      title: "Team Collaboration",
-      subtitle: "Work together seamlessly",
-      description: "Share and collaborate on documents with your team members in real-time."
+      title: "最も適切な丁寧さで補完することが可能！",
+      subtitle: "Generate text with the perfect level of politeness",
+      description: "適切な丁寧さのレベルを調整し、自然なコミュニケーションを実現します。"
     },
     {
-      title: "Custom Branding",
-      subtitle: "Maintain brand consistency",
-      description: "Apply your company's style guide automatically to all communications."
+      title: "明確な目的で文章を作成しよう！",
+      subtitle: "Create text with clear purpose and intent",
+      description: "目的に応じて、感謝・説明・確認など、最適な言い回しを選択し、効果的な文章を生成します。"
     },
     {
-      title: "Integration Ready",
-      subtitle: "Works with your tools",
-      description: "Seamlessly integrates with popular email clients and productivity tools."
+      title: "文章の種類を設定し、フォーマットを自動調整！",
+      subtitle: "Configure the most appropriate format based on document type",
+      description: "メール、メッセージ、報告書、議事録など、目的に応じた最適なフォーマットで文章を生成します。"
     },
     {
-      title: "Security First",
-      subtitle: "Enterprise-grade protection",
-      description: "Your data is protected with industry-leading security measures."
+      title: "情報を補充して、トーンをより改善！",
+      subtitle: "Add necessary information to polish the tone",
+      description: "必要な情報を追加することで、より自然で適切なトーンの文章を生成できます。"
     }
   ];
 
@@ -50,7 +50,7 @@ export default function InteractiveDemo() {
       textAlign: 'center',
       marginBottom: '1rem'
     }}>
-      今後のアップデート予定を共有します！
+      AIライターくんが役に立つこと
     </h2>
       <div style={{
         maxWidth: '2400px',
@@ -61,11 +61,11 @@ export default function InteractiveDemo() {
         <div style={{ 
           flex: 1,
           maxHeight: '80vh',
-          overflowY: 'auto',
+          overflowY: 'scroll',
           paddingRight: '1rem',
           scrollbarWidth: 'none',  // Firefox
           msOverflowStyle: 'none', // IE and Edge
-          '&::-webkit-scrollbar': { // Chrome, Safari, Opera
+          '&::WebkitScrollbar': { // Chrome, Safari, Opera
             display: 'none'
           }
         }}>
