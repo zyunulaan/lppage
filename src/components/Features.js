@@ -11,7 +11,7 @@ export default function Features() {
       icon: "🎯"
     },
     {
-      title: "やり取りを参照して",
+      title: "やり取りを参照して補完を最適化する",
       description: "参照したい文章・コミュニケーション履歴を張り付けて、コンテキストを理解したAIライターくんで気楽に補完しよう！",
       icon: "👥"
     }
