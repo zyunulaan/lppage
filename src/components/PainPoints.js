@@ -38,7 +38,7 @@ export default function PainPoints() {
             textAlign: 'center',
             marginBottom: '1rem'
           }}>
-            We Understand Your Challenges
+            ビジネス文章の悩みを解決したい！
           </h2>
           <p style={{
             fontSize: '1.2rem',
@@ -55,7 +55,8 @@ export default function PainPoints() {
             display: 'grid',
             gridTemplateColumns: 'repeat(3, 1fr)',
             gap: '2rem',
-            alignItems: 'start'
+            alignItems: 'start',
+            marginBottom: '4rem'
           }}>
             {painPoints.map((point, index) => (
               <div
@@ -125,6 +126,41 @@ export default function PainPoints() {
                 </div>
               </div>
             ))}
+          </div>
+
+          {/* Message Card */}
+          <div style={{
+            background: '#F4F5F7',
+            borderRadius: '12px',
+            padding: '1rem 2rem',
+            display: 'flex',
+            alignItems: 'center',
+            gap: '1.5rem',
+            maxWidth: '800px',
+            margin: '0 auto',
+            boxShadow: '0 4px 6px rgba(0,0,0,0.05)'
+          }}>
+            <div style={{
+              fontSize: '2rem',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              width: '40px',
+              height: '40px',
+              background: '#FFFFFF',
+              borderRadius: '8px',
+              boxShadow: '0 2px 4px rgba(0,0,0,0.05)'
+            }}>
+              💬
+            </div>
+            <p style={{
+              fontSize: '1.25rem',
+              color: '#172B4D',
+              fontWeight: '500',
+              margin: 0
+            }}>
+              Join thousands of teams who trust us to improve their communication
+            </p>
           </div>
         </div>
       </section>

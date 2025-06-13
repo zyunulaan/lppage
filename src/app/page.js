@@ -48,18 +48,29 @@ export default function Home() {
   }, []);
 
   return (
-    <main ref={mainRef}>
-      <Navigation />
-      <Hero />
-      <PainPoints />
-      <Features />
-      <div ref={interactiveDemoRef}>
-        <InteractiveDemo />
-      </div>
-      <Roadmap />
-      <BetaSignup />
-      <FAQ />
-      <Footer />
-    </main>
+    <>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap"
+        rel="stylesheet"
+      />
+      <main 
+        ref={mainRef}
+        style={{
+          fontFamily: "'Noto Sans JP', sans-serif"
+        }}
+      >
+        <Navigation />
+        <Hero />
+        <PainPoints />
+        <Features />
+        <div ref={interactiveDemoRef}>
+          <InteractiveDemo />
+        </div>
+        <Roadmap />
+        <BetaSignup />
+        <FAQ />
+        <Footer />
+      </main>
+    </>
   );
 }

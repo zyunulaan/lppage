@@ -23,9 +23,16 @@ export default function Navigation() {
           gap: '2rem',
           alignItems: 'center'
         }}>
-          <a href="#product" style={{ textDecoration: 'none', color: '#172B4D' }}>Product</a>
-          <a href="#pricing" style={{ textDecoration: 'none', color: '#172B4D' }}>Pricing</a>
-          <a href="#docs" style={{ textDecoration: 'none', color: '#172B4D' }}>Docs</a>
+          <button style={{
+            padding: '0.5rem 1rem',
+            background: 'linear-gradient(135deg, #3B82F6, #14B8A6)',
+            color: 'white',
+            border: 'none',
+            borderRadius: '3px',
+            cursor: 'pointer'
+          }}>
+            ご要望があればこちらから
+          </button>          
           <button style={{
             padding: '0.5rem 1rem',
             background: '#0052CC',
@@ -34,7 +41,7 @@ export default function Navigation() {
             borderRadius: '3px',
             cursor: 'pointer'
           }}>
-            Login/Signup
+            新規登録・ログイン
           </button>
         </div>
       </div>

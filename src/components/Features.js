@@ -37,7 +37,8 @@ export default function Features() {
         <div style={{
           display: 'flex',
           gap: '2rem',
-          justifyContent: 'center'
+          justifyContent: 'center',
+          marginBottom: '4rem'
         }}>
           {features.map((feature, index) => (
             <div
@@ -79,6 +80,41 @@ export default function Features() {
               </p>
             </div>
           ))}
+        </div>
+        
+        {/* Message Card */}
+        <div style={{
+          background: '#F4F5F7',
+          borderRadius: '12px',
+          padding: '1rem 2rem',
+          display: 'flex',
+          alignItems: 'center',
+          gap: '1.5rem',
+          maxWidth: '800px',
+          margin: '0 auto',
+          boxShadow: '0 4px 6px rgba(0,0,0,0.05)'
+        }}>
+          <div style={{
+            fontSize: '2rem',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            width: '40px',
+            height: '40px',
+            background: '#FFFFFF',
+            borderRadius: '8px',
+            boxShadow: '0 2px 4px rgba(0,0,0,0.05)'
+          }}>
+            💬
+          </div>
+          <p style={{
+            fontSize: '1.25rem',
+            color: '#172B4D',
+            fontWeight: '500',
+            margin: 0
+          }}>
+            Join thousands of teams who trust us to improve their communication
+          </p>
         </div>
       </div>
     </section>

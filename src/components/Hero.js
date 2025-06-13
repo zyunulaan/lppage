@@ -21,24 +21,16 @@ export default function Hero() {
             marginBottom: '1rem',
             lineHeight: '1.2'
           }}>
-            Write Smarter, Communicate Better
+            ビジネスの<br></br>「伝いたい」を、<br></br>「伝わる」に。
           </h1>
-          <h2 style={{
-            fontSize: '1.5rem',
-            color: '#505F79',
-            marginBottom: '2rem',
-            fontWeight: 'normal'
-          }}>
-            AI-powered writing assistance for business professionals
-          </h2>
+
           <p style={{
             fontSize: '1.1rem',
             color: '#505F79',
             lineHeight: '1.6',
             marginBottom: '2rem'
           }}>
-            Transform your business communication with our intelligent writing assistant. 
-            Save time, reduce errors, and maintain professional standards across all your messages.
+            ビジネスパーソンの時間を本業に集中させるため、書類仕事を効率化する毎日使いのAIアシスタント。
           </p>
           <button style={{
             padding: '0.75rem 1.5rem',
@@ -49,7 +41,7 @@ export default function Hero() {
             fontSize: '1.1rem',
             cursor: 'pointer'
           }}>
-            Get Started
+           今すぐ試す
           </button>
         </div>
         <div style={{ flex: 1, textAlign: 'center' }}>
